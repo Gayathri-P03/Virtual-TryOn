@@ -7,8 +7,8 @@ export default function ProfilePage() {
   const [isEditing, setIsEditing] = useState(false);
 
   const [user, setUser] = useState({
-    name: "Gayathri P",
-    email: "gayathri@example.com",
+    name: "Anu",
+    email: "anu@gmail.com",
     age:"29",
     size:"S",
     phone: "9876543210",
@@ -57,7 +57,7 @@ export default function ProfilePage() {
   return (
     <div className="min-h-screen flex">
       
-      {/* Sidebar */}
+      
       <div className="sidebar w-64 p-6 flex flex-col space-y-6 text-purple-900 bg-white shadow-md">
         <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
 
@@ -72,7 +72,7 @@ export default function ProfilePage() {
         ))}
       </div>
 
-      {/* Main Content */}
+      
       <div className="flex-1 p-10 bg-gray-50">
 
         <h1 className="text-3xl font-bold text-purple-900 mb-8">
@@ -83,7 +83,7 @@ export default function ProfilePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            {/* Name */}
+            
             <div>
               <label className="text-gray-600 font-medium">Name</label>
               {isEditing ? (
@@ -93,7 +93,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* Email */}
+            
             <div>
               <label className="text-gray-600 font-medium">Email</label>
               {isEditing ? (
@@ -103,7 +103,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* Age */}
+            
             <div>
               <label className="text-gray-600 font-medium">Age</label>
               {isEditing ? (
@@ -113,7 +113,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* Size */}
+            
             <div>
              <label className="text-gray-600 font-medium">Size</label>
 
@@ -138,7 +138,7 @@ export default function ProfilePage() {
                     )}
             </div>
 
-            {/* Phone */}
+            
             <div>
               <label className="text-gray-600 font-medium">Phone</label>
               {isEditing ? (
@@ -148,7 +148,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* Gender */}
+            
             <div>
               <label className="text-gray-600 font-medium">Gender</label>
               {isEditing ? (
@@ -162,7 +162,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* DOB */}
+            
             <div>
               <label className="text-gray-600 font-medium">Date of Birth</label>
               {isEditing ? (
@@ -172,7 +172,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* Address */}
+            
             <div>
               <label className="text-gray-600 font-medium">Address</label>
               {isEditing ? (
@@ -182,7 +182,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* City */}
+            
             <div>
               <label className="text-gray-600 font-medium">City</label>
               {isEditing ? (
@@ -192,7 +192,7 @@ export default function ProfilePage() {
               )}
             </div>
 
-            {/* State */}
+            
             <div>
               <label className="text-gray-600 font-medium">State</label>
               {isEditing ? (
@@ -204,7 +204,7 @@ export default function ProfilePage() {
 
           </div>
 
-          {/* Button */}
+          
           <button
             onClick={handleEditToggle}
             className="mt-8 bg-purple-900 text-white px-6 py-2 rounded-xl shadow-md hover:shadow-lg transition"

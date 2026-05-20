@@ -53,7 +53,7 @@ export default function HelpSupportPage() {
   return (
     <div className="min-h-screen flex">
 
-      {/* SIDEBAR */}
+      
       <div className="sidebar w-64 p-6 flex flex-col space-y-6 text-purple-900 bg-white shadow-md">
         <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
 
@@ -68,17 +68,17 @@ export default function HelpSupportPage() {
         ))}
       </div>
 
-      {/* FULL CONTENT */}
+      
       <div className="flex-1 p-10 bg-gray-50 overflow-y-auto">
 
         <h1 className="text-3xl font-bold text-purple-900 mb-8">
           Help & Support
         </h1>
 
-        {/* 🔥 CHANGED: stacked layout */}
+        
         <div className="flex flex-col gap-8">
 
-          {/* FAQ */}
+          
           <div className="bg-white p-6 rounded-xl shadow-md">
             <h2 className="text-xl font-semibold mb-4 text-purple-900">
               Frequently Asked Questions
@@ -108,7 +108,7 @@ export default function HelpSupportPage() {
             </div>
           </div>
 
-          {/* CONTACT FORM */}
+          
           <div className="bg-white p-6 rounded-xl shadow-md">
             <h2 className="text-xl font-semibold mb-4 text-purple-900">
               Contact Support

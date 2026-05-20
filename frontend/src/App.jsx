@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-200 to-purple-400">
-      {/* ================= NAVBAR ================= */}
+      
       <nav className="flex justify-between items-center px-10 py-6 backdrop-blur-md bg-white/30 rounded-b-2xl shadow-md sticky top-0 z-50">
         <div className="text-2xl font-bold text-purple-900">AI</div>
 
@@ -25,7 +25,7 @@ export default function App() {
         </button>
       </nav>
 
-      {/* ================= HERO SECTION ================= */}
+      
       <div className="text-center mt-20 px-6 md:px-20">
         <h1 className="text-5xl md:text-6xl font-bold text-purple-900 leading-relaxed tracking-tight drop-shadow-lg">
           <span className="block">Create Fashion Image with</span>
@@ -37,7 +37,7 @@ export default function App() {
           that lets you try outfits virtually in seconds.
         </p>
 
-        {/* BUTTON */}
+        
         <div className="mt-10 flex flex-wrap justify-center gap-6">
           <button
             onClick={() => navigate("/dashboard")}
@@ -48,7 +48,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* ================= IMAGE PREVIEW SECTION ================= */}
+      
       <div className="mt-24 mx-6 md:mx-20 bg-white/50 backdrop-blur-md rounded-3xl shadow-xl p-10 hover:scale-105 transition transform duration-500">
         <div className="flex justify-center">
           <img

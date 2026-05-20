@@ -49,7 +49,7 @@ export default function DownloadsPage() {
   return (
     <div className="min-h-screen flex">
 
-      {/* ✅ SIDEBAR (FIXED) */}
+      
       <div className="sidebar fixed top-0 left-0 h-full w-64 p-6 flex flex-col space-y-6 text-purple-900 bg-white shadow-md">
         <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
 
@@ -64,7 +64,7 @@ export default function DownloadsPage() {
         ))}
       </div>
 
-      {/* ✅ CONTENT */}
+      
       <div className="flex-1 ml-64 p-10 bg-gray-50 h-screen overflow-y-auto">
 
         <h1 className="text-3xl font-bold text-purple-900 mb-8">

@@ -39,20 +39,20 @@ export default function MyTryOnsPage() {
     }
   };
 
-  // ✅ FINAL FIXED FETCH FUNCTION
+  
   const fetchTryOns = async () => {
     try {
       const res = await axios.get("http://127.0.0.1:8000/results");
 
-      console.log("RAW DATA:", res.data); // DEBUG
+      console.log("RAW DATA:", res.data); 
 
       const formatted = res.data.map((item) => {
         let path = item.output_image || "";
 
-        // 🔥 Fix Windows backslash
+        
         path = path.replace(/\\/g, "/");
 
-        // 🔥 Ensure correct /outputs path
+       
         if (!path.startsWith("/outputs")) {
           const fileName = path.split("/").pop();
           path = `/outputs/${fileName}`;
@@ -64,7 +64,7 @@ export default function MyTryOnsPage() {
         };
       });
 
-      console.log("FINAL URLs:", formatted); // DEBUG
+      console.log("FINAL URLs:", formatted); 
 
       setHistory(formatted);
     } catch (err) {
@@ -80,7 +80,7 @@ export default function MyTryOnsPage() {
   }, []);
 
   const handleDownload = (imageUrl) => {
-  // download file
+  
   const link = document.createElement("a");
   link.href = imageUrl;
   link.download = "tryon.png";
@@ -88,7 +88,7 @@ export default function MyTryOnsPage() {
   link.click();
   document.body.removeChild(link);
 
-  // ✅ save to localStorage
+  
   let downloads = JSON.parse(localStorage.getItem("downloads")) || [];
 
   if (!downloads.includes(imageUrl)) {
@@ -100,7 +100,7 @@ export default function MyTryOnsPage() {
   return (
     <div className="min-h-screen flex">
 
-      {/* ✅ FIXED SIDEBAR */}
+      
       <div className="sidebar fixed top-0 left-0 h-full w-64 p-6 flex flex-col space-y-6 text-purple-900 bg-white shadow-md">
         <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
 
@@ -115,7 +115,7 @@ export default function MyTryOnsPage() {
         ))}
       </div>
 
-      {/* ✅ SCROLLABLE CONTENT */}
+      
       <div className="flex-1 ml-64 p-10 bg-gray-50 h-screen overflow-y-auto">
 
         <h1 className="text-3xl font-bold text-purple-900 mb-8">
@@ -134,13 +134,13 @@ export default function MyTryOnsPage() {
                 key={item.id}
                 className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition"
               >
-                {/* ✅ IMAGE FIXED */}
+                
                 <img
                   src={item.output_image}
                   alt="Try-On"
                   className="w-full h-64 object-cover rounded-lg border border-gray-200 shadow-sm"
                   onError={(e) => {
-                    console.log("Image failed:", item.output_image); // DEBUG
+                    console.log("Image failed:", item.output_image); 
                     e.target.src =
                       "https://via.placeholder.com/300x250?text=Image+Not+Found";
                   }}

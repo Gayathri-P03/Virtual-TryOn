@@ -1,4 +1,4 @@
-// DashboardPage.jsx
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -87,7 +87,7 @@ export default function DashboardPage() {
 
     setOutputImage(outputUrl);
 
-    // ✅ STORE USER IMAGE (BASE64)
+    
     const reader = new FileReader();
     reader.onloadend = () => {
       localStorage.setItem("compare_user", reader.result);
@@ -102,7 +102,7 @@ export default function DashboardPage() {
   }
 };
   const handleDownload = (imageUrl) => {
-  // download file
+  
   const link = document.createElement("a");
   link.href = imageUrl;
   link.download = "tryon.png";
@@ -110,7 +110,7 @@ export default function DashboardPage() {
   link.click();
   document.body.removeChild(link);
 
-  // ✅ save to localStorage
+  
   let downloads = JSON.parse(localStorage.getItem("downloads")) || [];
 
   if (!downloads.includes(imageUrl)) {
