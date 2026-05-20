@@ -1,10 +1,10 @@
-# 👗 Virtual Try-On Project
+#  Virtual Try-On Project
 
 An AI-powered Virtual Try-On application that allows users to upload a user image and clothing image to generate realistic virtual try-on results using AI models.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Upload user image
 - Upload clothing image
@@ -16,7 +16,7 @@ An AI-powered Virtual Try-On application that allows users to upload a user imag
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React.js
@@ -56,7 +56,7 @@ virtual_tryon_project/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Clone Repository
 
@@ -90,7 +90,7 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Home Page
 
@@ -122,7 +122,7 @@ npm run dev
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 - Authentication system
 - Multiple outfit support
@@ -131,6 +131,6 @@ npm run dev
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 Gayathri P
